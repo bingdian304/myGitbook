@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>开放接口 · GitBook</title>
+        <title>订单查询 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="jiayouxiadan.html" />
+    <link rel="next" href="../part1/update.html" />
     
     
-    <link rel="prev" href="../part1/changjianwenti.html" />
+    <link rel="prev" href="jiayouxiadan.html" />
     
 
     </head>
@@ -212,7 +212,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="kaifangjiekou.html">
+        <li class="chapter " data-level="1.5" data-path="kaifangjiekou.html">
             
                 <a href="kaifangjiekou.html">
             
@@ -239,7 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="dingdanchaxun.html">
+        <li class="chapter active" data-level="1.5.2" data-path="dingdanchaxun.html">
             
                 <a href="dingdanchaxun.html">
             
@@ -300,7 +300,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >开放接口</a>
+        <a href=".." >订单查询</a>
     </h1>
 </div>
 
@@ -315,8 +315,169 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x52A0;&#x6CB9;&#x4E1A;&#x52A1;&#x76F8;&#x5173;&#x5F00;&#x653E;&#x63A5;&#x53E3;">&#x52A0;&#x6CB9;&#x4E1A;&#x52A1;&#x76F8;&#x5173;&#x5F00;&#x653E;&#x63A5;&#x53E3;</h2>
-<hr>
+                                <h2 id="&#x52A0;&#x6CB9;&#x8BA2;&#x5355;&#x67E5;&#x8BE2;">&#x52A0;&#x6CB9;&#x8BA2;&#x5355;&#x67E5;&#x8BE2;</h2>
+<h4 id="&#x63A5;&#x53E3;&#x5730;&#x5740;">&#x63A5;&#x53E3;&#x5730;&#x5740;</h4>
+<p><a href="http://i.qmanager.cn/gas_interface.php" target="_blank">http://i.qmanager.cn/gas_interface.php</a></p>
+<h4 id="&#x534F;&#x8BAE;&#x7C7B;&#x578B;">&#x534F;&#x8BAE;&#x7C7B;&#x578B;</h4>
+<p>HTTP POST</p>
+<h4 id="&#x529F;&#x80FD;&#x8BF4;&#x660E;">&#x529F;&#x80FD;&#x8BF4;&#x660E;</h4>
+<p>&#x6839;&#x636E;&#x6CB9;&#x7AD9;&#x552F;&#x4E00;&#x6807;&#x793A;&#x83B7;&#x53D6;&#x8BA2;&#x5355;&#x5217;&#x8868;&#x4FE1;&#x606F;&#x3002;</p>
+<h4 id="&#x63A5;&#x53E3;&#x53C2;&#x6570;">&#x63A5;&#x53E3;&#x53C2;&#x6570;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">API&#x63A5;&#x53E3;&#x540D;&#x79F0;GasOilOrderClass</td>
+</tr>
+<tr>
+<td style="text-align:left">opt_type</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x56FA;&#x5B9A;&#x503C; query_oil_order</td>
+</tr>
+<tr>
+<td style="text-align:left">org_id</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x52A0;&#x6CB9;&#x7AD9;&#x552F;&#x4E00;&#x6807;&#x793A;</td>
+</tr>
+<tr>
+<td style="text-align:left">out_order_id</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">&#x5916;&#x90E8;&#x8BA2;&#x5355;id&#xFF0C;&#x786E;&#x4FDD;&#x552F;&#x4E00;&#x6027;&#xFF0C;&#x9650;&#x5B9A;20&#x4F4D;&#x4EE5;&#x5185;&#xFF08;&#x67E5;&#x8BE2;&#x8BA2;&#x5355;&#x8BE6;&#x60C5;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">date</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">&#x67E5;&#x8BE2;&#x65E5;&#x671F;&#xFF0C;&#x683C;&#x5F0F;yyyy-MM-dd&#xFF08;&#x67E5;&#x8BE2;&#x67D0;&#x4E00;&#x65E5;&#x7684;&#x8BA2;&#x5355;&#x5217;&#x8868;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x7ED3;&#x679C;">&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">error_code</td>
+<td style="text-align:left">Int</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x9519;&#x8BEF;&#x6807;&#x793A;&#x7801;&#xFF0C;0&#x6210;&#x529F;&#xFF0C;&#x5176;&#x5B83;&#x5931;&#x8D25;</td>
+</tr>
+<tr>
+<td style="text-align:left">error_msg</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x9519;&#x8BEF;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td style="text-align:left">data</td>
+<td style="text-align:left">Array</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x6570;&#x636E;(&#x8BA2;&#x5355;&#x5217;&#x8868;&#x4FE1;&#x606F;)</td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x5355;&#x7B14;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#x7ED3;&#x6784;">&#x5355;&#x7B14;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#x7ED3;&#x6784;</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">out_order_id</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x5916;&#x90E8;&#x8BA2;&#x5355;id</td>
+</tr>
+<tr>
+<td style="text-align:left">order_id</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x5FAE;&#x6CB9;&#x8BA2;&#x5355;id</td>
+</tr>
+<tr>
+<td style="text-align:left">pay_date</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x8BA2;&#x5355;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td style="text-align:left">pay_price</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x52A0;&#x6CB9;&#x91D1;&#x989D;</td>
+</tr>
+<tr>
+<td style="text-align:left">org_id</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x52A0;&#x6CB9;&#x7AD9;&#x552F;&#x4E00;&#x6807;&#x793A;</td>
+</tr>
+<tr>
+<td style="text-align:left">org_name</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x52A0;&#x6CB9;&#x7AD9;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td style="text-align:left">oil_num</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x6CB9;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">oil_gun</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">&#x6CB9;&#x67AA;&#x53F7;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FD4;&#x56DE;&#x793A;&#x4F8B;">&#x8FD4;&#x56DE;&#x793A;&#x4F8B;</h4>
+<p>JSON&#x6570;&#x636E;&#x683C;&#x5F0F;</p>
+<pre><code>{
+    &quot;error_code&quot;:&quot;0&quot;,
+    &quot;error_msg&quot;:&quot;&#x8BA2;&#x5355;&#x67E5;&#x8BE2;&#x6210;&#x529F;&quot;,
+   &quot;data &quot;:
+   [
+        {
+            &quot;out_order_id&quot;:&quot;PA23424234232320234&quot;,  
+            &quot;order_id&quot;:&quot;149724902302344&quot;,
+            &quot;pay_date&quot;:&quot;2019.03.05 10:35:20&quot;,
+            &quot;pay_price&quot;:&quot;300.00&quot;,
+            &quot;org_id&quot;:&quot;972490230234&quot;,
+            &quot;org_name&quot;:&quot;&#x5FAE;&#x6CB9;&#x79D1;&#x6280;&#x6D4B;&#x8BD5;&#x7AD9;&quot;,
+            &quot;org_num&quot;:&quot;92#&quot;,
+            &quot;oil_gun &quot;:&quot;6&#x53F7;&#x6CB9;&#x67AA;&quot;
+       },
+       &#x2026;
+   ]
+}
+</code></pre><hr>
 <p><sup><a href="#fn_Copyright%20&#xA9;%20&#x5FAE;&#x6CB9;&#x79D1;&#x6280;(&#x5317;&#x4EAC;)&#x6709;&#x9650;&#x516C;&#x53F8;%202020%20all%20right%20reserved&#xFF0C;powered%20by%20Gitbook" id="reffn_Copyright &#xA9; &#x5FAE;&#x6CB9;&#x79D1;&#x6280;(&#x5317;&#x4EAC;)&#x6709;&#x9650;&#x516C;&#x53F8; 2020 all right reserved&#xFF0C;powered by Gitbook">Copyright &#xA9; &#x5FAE;&#x6CB9;&#x79D1;&#x6280;(&#x5317;&#x4EAC;)&#x6709;&#x9650;&#x516C;&#x53F8; 2020 all right reserved&#xFF0C;powered by Gitbook</a></sup></p>
 
                                 
@@ -345,12 +506,12 @@
 
             
                 
-                <a href="../part1/changjianwenti.html" class="navigation navigation-prev " aria-label="Previous page: 常见问题">
+                <a href="jiayouxiadan.html" class="navigation navigation-prev " aria-label="Previous page: 加油下单">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="jiayouxiadan.html" class="navigation navigation-next " aria-label="Next page: 加油下单">
+                <a href="../part1/update.html" class="navigation navigation-next " aria-label="Next page: 更新日志">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -361,7 +522,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"开放接口","level":"1.5","depth":1,"next":{"title":"加油下单","level":"1.5.1","depth":2,"path":"part2/jiayouxiadan.md","ref":"part2/jiayouxiadan.md","articles":[]},"previous":{"title":"常见问题","level":"1.4.5","depth":2,"path":"part1/changjianwenti.md","ref":"part1/changjianwenti.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part2/kaifangjiekou.md","mtime":"2020-07-31T02:52:44.562Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-31T03:23:52.225Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"订单查询","level":"1.5.2","depth":2,"next":{"title":"更新日志","level":"1.6","depth":1,"path":"part1/update.md","ref":"part1/update.md","articles":[]},"previous":{"title":"加油下单","level":"1.5.1","depth":2,"path":"part2/jiayouxiadan.md","ref":"part2/jiayouxiadan.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part2/dingdanchaxun.md","mtime":"2020-07-31T03:29:02.784Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-31T06:06:54.980Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
