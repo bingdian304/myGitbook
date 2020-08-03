@@ -14,7 +14,4 @@
     * [订单查询](part2/dingdanchaxun.md)
 * [更新日志](part1/update.md)
 
-> 一级目录
-> 1. 列表1
-> 2. 列表2
 ---

@@ -1,0 +1,33 @@
+{
+    "title":"微油接口文档",
+    "author":"WPF",
+    "description":"",
+    "language":"zh",
+    "direction":"ltr",
+    "plugins":[
+        "-search",
+        "-sharing",
+        "tbfed-pagefooter",
+        "fontsettings",
+        "links"
+    ],
+    "pluginsConfig":{
+        "tbfed-pagefooter":{
+            "copyright":"Copyright &copy 微油科技(北京)有限公司 2020",
+            "modify_label":"该文件修订时间:",
+            "modify_format":"yyyy-MM-DD"
+        },
+        "fontsettings":{
+            "theme":"white",
+            "family":"sans",
+            "size":4
+        },
+        "links":{
+            "gitbook":false,
+            "sidebar":{
+                "Personal Book":"https://bingdian304.github.io/myGitbook/"
+            }
+        }
+    }
+}
+

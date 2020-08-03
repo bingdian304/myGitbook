@@ -1,14 +1,14 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>接入说明 · GitBook</title>
+        <title>接入说明 · 微油接口文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="WPF">
         
         
     
@@ -17,15 +17,19 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-links/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
         
@@ -70,10 +74,6 @@
     <div class="book-summary">
         
             
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
             
                 <nav role="navigation">
                 
@@ -277,7 +277,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本書使用 GitBook 釋出
         </a>
     </li>
 </ul>
@@ -310,9 +310,6 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
-    <div class="search-noresults">
-    
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="&#x6CB9;&#x7AD9;&#x7684;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">&#x6CB9;&#x7AD9;&#x7684;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h2>
@@ -322,28 +319,14 @@
 <p>1&#xFF09;&#x5FAE;&#x6CB9;&#x63D0;&#x4F9B;&#x52A0;&#x6CB9;&#x4E1A;&#x52A1;&#x76F8;&#x5173;&#x7684;API&#x63A5;&#x53E3;&#xFF0C;&#x4EE5;&#x4F9B;&#x6CB9;&#x7AD9;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x3002;</p>
 <p>2&#xFF09;&#x5FAE;&#x6CB9;&#x5C06;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x5F02;&#x6B65;&#x56DE;&#x8C03;&#x7ED9;&#x6CB9;&#x7AD9;&#x7CFB;&#x7EDF;&#x7684;&#x6307;&#x5B9A;&#x63A5;&#x53E3;&#x3002;</p>
 <p>3&#xFF09;&#x5FAE;&#x6CB9;&#x63D0;&#x4F9B;&#x4EC5;&#x9650;&#x6CB9;&#x7AD9;&#x7CFB;&#x7EDF;&#x4F7F;&#x7528;&#x7684;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x6CB9;&#x7AD9;&#x552F;&#x4E00;&#x6807;&#x793A;&#x3001;RSA&#x52A0;&#x5BC6;&#x516C;&#x94A5;&#x7B49;&#x3002;</p>
-<hr>
-<p><sup><a href="#fn_Copyright%20&#xA9;%20&#x5FAE;&#x6CB9;&#x79D1;&#x6280;(&#x5317;&#x4EAC;)&#x6709;&#x9650;&#x516C;&#x53F8;%202020%20all%20right%20reserved&#xFF0C;powered%20by%20Gitbook" id="reffn_Copyright &#xA9; &#x5FAE;&#x6CB9;&#x79D1;&#x6280;(&#x5317;&#x4EAC;)&#x6709;&#x9650;&#x516C;&#x53F8; 2020 all right reserved&#xFF0C;powered by Gitbook">Copyright &#xA9; &#x5FAE;&#x6CB9;&#x79D1;&#x6280;(&#x5317;&#x4EAC;)&#x6709;&#x9650;&#x516C;&#x53F8; 2020 all right reserved&#xFF0C;powered by Gitbook</a></sup></p>
-
+<!-- *****
+[^Copyright © 微油科技(北京)有限公司 2020 all right reserved，powered by Gitbook] --> 
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x5FAE;&#x6CB9;&#x79D1;&#x6280;(&#x5317;&#x4EAC;)&#x6709;&#x9650;&#x516C;&#x53F8; 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;:
+2020-08-03
+</span></footer>
                                 
                                 </section>
                             
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
                         </div>
                     </div>
                 
@@ -367,7 +350,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"接入说明","level":"1.4","depth":1,"next":{"title":"接口说明","level":"1.4.1","depth":2,"path":"part1/jiekoushuoming.md","ref":"part1/jiekoushuoming.md","articles":[]},"previous":{"title":"业务流程","level":"1.3","depth":1,"path":"part1/yewuliucheng.md","ref":"part1/yewuliucheng.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part1/jierushuoming.md","mtime":"2020-07-31T03:28:53.443Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-31T03:23:52.225Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"接入说明","level":"1.4","depth":1,"next":{"title":"接口说明","level":"1.4.1","depth":2,"path":"part1/jiekoushuoming.md","ref":"part1/jiekoushuoming.md","articles":[]},"previous":{"title":"业务流程","level":"1.3","depth":1,"path":"part1/yewuliucheng.md","ref":"part1/yewuliucheng.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","tbfed-pagefooter","fontsettings","links","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 微油科技(北京)有限公司 2020","modify_label":"该文件修订时间:","modify_format":"yyyy-MM-DD"},"fontsettings":{"family":"sans","size":4,"theme":"white"},"links":{"gitbook":false,"sidebar":{"Personal Book":"https://bingdian304.github.io/myGitbook/"}},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"WPF","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"微油接口文档","language":"zh","gitbook":"*","description":"","direction":"ltr"},"file":{"path":"part1/jierushuoming.md","mtime":"2020-08-03T09:18:33.497Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-03T09:29:45.117Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -377,15 +360,15 @@
     <script src="../gitbook/theme.js"></script>
     
         
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-links/plugin.js"></script>
+        
+    
+        
         <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
         
     
         
@@ -394,14 +377,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
