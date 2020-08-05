@@ -2,6 +2,9 @@
 
 将POST的所有参数对转换为JSON字符串，对JSON字符串进行RSA 256位分段加密，RSA的公钥由微油提供。
 
+##### 测试环境RSA公钥
+
+###### MDwwDQYJKoZIhvcNAQEBBQADKwAwKAIhAKjo5yvm3oecSEubnjqAsenP8LkTUKTw/zU0EAVt6QzLAgMBAAE=
 
 ##### RSA加密示例，以Java代码为例
 

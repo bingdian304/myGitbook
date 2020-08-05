@@ -14,12 +14,12 @@ HTTP POST
 | :--- | :--- | :--- | :--- |
 |class |String	|是|	API接口名称GasOilOrderClass|
 |opt_type|	String|	是|	固定值 oil_order|
-|org_id	|String|	是	|加油站唯一标示|
-|pay_price	|String	|是|	加油金额（单位：元，保留两位小数）|
+|org_id	|String|	是	|加油站唯一标示（微油提供）|
+|total_price	|String	|是|	加油金额（单位：元，大于0的整数或小数，小数须保留小数点后两位）|
 |oil_num	|String	|是	|油号，如92#|
-|oil_gun	|String	|否	|油枪号，如9号油枪|
-|user_id	|String	|是	|微油用户标识，扫码后识别出的参数|
-|out_order_id	|String	|是	|外部订单id，确保唯一性，限定20位以内|
+|oil_gun	|String	|否	|油枪号，如9，限数字|
+|qr_id	|String	|是	|付款码标识，扫码后识别出的参数|
+|out_order_id	|String	|是	|外部订单id，确保唯一性，现限定10到50位大小写字母和数字的组合|
 |notify_url	|String	|是	|油站的回调地址，记录订单支付状态|
 
 #### 返回结果
@@ -38,12 +38,11 @@ JSON数据格式
     "out_order_id":"YZ543534534454",                //外部订单id
     "notify_url":"http://youzhan/ordernotify.php",  //油站提供的回调接口
     "data ":{
-        "order_id":"149724902302344",        //微油加油订单id，长度固定为15位
+        "order_id":"149724902302344",        //微油加油订单id
         "create_date":"2020.07.25 10:35:20", //加油订单下单时间
-        "pay_price":"300.00",             //加油金额
-        "user_id":"15811596808",          //用户唯一标示
-        "org_id":"YZ45511215424512",     //加油站唯一标示
-        "org_name":"微油科技测试站",       //加油站名称
+        "total_price":"300.00",             //加油金额
+        "org_id":"YZ45511215424512",        //加油站唯一标示
+        "org_name":"微油科技测试站",          //加油站名称
    }
 }
 ```
