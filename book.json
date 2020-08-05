@@ -20,7 +20,7 @@
         "fontsettings":{
             "theme":"white",
             "family":"sans",
-            "size":4
+            "size":2
         },
         "links":{
             "gitbook":false,
